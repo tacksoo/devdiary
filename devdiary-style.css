@@ -1,0 +1,45 @@
+body {
+  font-family: 'Consolas', 'Arial', 'Verdana', 'Comic Sans MS';
+  font-size: 20px;
+  background: rgb(0,0,0);
+  color: rgb(0,255,0);
+}
+
+#emailarea {
+  position: absolute;
+  border: 1px solid lightgray;
+  padding-left: 5px;
+  margin: 5px;
+  width: 250px;
+  height: 175px;
+  top: 35px;
+  left: 750px;
+}
+
+textarea {
+  font-family: 'Consolas', 'Arial', 'Verdana', 'Comic Sans MS';
+  resize: none;  //perhaps change to vertical?
+}
+
+#mainarea {
+  width: 600px;
+  margin-left: 90px;
+  line-height: 2;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid rgb(0,255,0);
+}
+
+li:first-child {
+  border-top: 1px solid rgb(0,255,0);
+}
