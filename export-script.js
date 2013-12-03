@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     $textarea = $('textarea');
 
-    var matchesDate = localStorage['list'].match(/\d\d\/\d\d\/\d\d\d\d/g);
+    var matchesDate = localStorage['list'].match(/\d\d?\/\d\d?\/\d\d\d\d/g);
     var matchesDay = localStorage['list'].match(/\b[A-Z][a-z][a-z]\b/g);
     var str = '';
 

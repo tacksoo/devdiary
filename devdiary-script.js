@@ -34,7 +34,7 @@ $(document).ready(function() {
 
   for(i=0; i<localStorage.length; i++) {
     str = localStorage.key(i);
-    if(/\d\d-\d\d-\d\d/.test(str)) {
+    if(/\d\d?-\d\d?-\d\d/.test(str)) {
       $('#' + str).val(localStorage.getItem(str));
     }
   }
