@@ -47,9 +47,9 @@ $(document).ready(function() {
       if( checkDuplicateEntry(date) !== true ) {
         var textarea = '<textarea id="'+tag+'" rows="5" cols="60"></textarea>';
         var button = '<input class="emailbutton" type="button" value="Email" />';
-        var delete_entry = '<input class="deletebutton" type="button" value="Delete" />';
+        var delete_entry = '<input class="deletebutton" type="button" value="Delete" />';        
         $ol.prepend('<li><span>' + date + '</span>' + ' ' + dayOfWeek + '<br />' 
-                   + textarea + '<br />' + button + delete_entry + '</li>' );
+                   + textarea + '<br />' + button + delete_entry + '</li>');
       } else {
         alert('Oops... you already have an entry for today');
       }
@@ -99,7 +99,7 @@ $(document).on('click','.emailbutton',function() {
   var subject = 'Developer Diary: ' + entry.find('span').html();
   subject = encodeURI(subject);
   var body = entry.find('textarea').val();
-  body = encodeURI(body);
+  body = encodeURIComponent(body);
   var email = $('input[name="personal-email"]').val() + ";" +
               $('input[name="mentor-email"]').val();
   var url = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + 
